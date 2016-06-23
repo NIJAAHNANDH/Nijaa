@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int a[1000],b[100]={0},n,i;
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-		for(i=0;i<n;i++)
-    	b[a[i]]++;
-    for(i=0;i<n;i++)
+    int arr[1000],arr1[100]={0},num,k;
+	scanf("%d",&num);
+	for(k=1;k<=num;k++)
+		scanf("%d",&arr[k]);
+	for(k=1;k<=num;k++)
+    	arr1[arr[k]]++;
+    for(k=1;k<=num;k++)
     {
-    	if(b[a[i]]>1)
+    	if(arr1[arr[k]]>1)
     	{
-    		printf("%d",a[i]);
+    		printf("%d",arr[k]);
     		break;
     	}
     }
