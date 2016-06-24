@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	long long int a;
+	cin>>a;
+	if(a>0)
+		cout<<"Given number is positive number";
+	else if(a==0)
+		cout<<"Given number is zero";
+	else
+		cout<<"Given number is negative number";
+	return 0;
